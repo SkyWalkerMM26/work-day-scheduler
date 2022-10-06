@@ -31,7 +31,7 @@ $(document).ready(function (){
     $(".saveBtn").click(function (event){
         event.preventDefault();
         var storeInput = $(this).siblings(".time-block").val();
-        var inputTime = $(this).attr("id");
+        var inputTime = $(this).parent().attr("id");
         localStorage.setItem(inputTime, storeInput);
     });
     

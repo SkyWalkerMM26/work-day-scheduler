@@ -16,14 +16,16 @@ $(document).ready(function (){
     $("#currentDay").text(headerTime);
 
     var currentHH = moment().format("H");
+    console.log(currentHH); 
+    
     
     //this adds add/remove class from style.css depending on the if statements.
     $(".row").each(function(){
         var inputTime = $(this).attr("id");
-
+        
         if (currentHH == inputTime) {
             $(this).addClass("present");
-            $(this).children("description").addClass("white-text");
+            // $(this).children("description").addClass("white-text");
         } else if (currentHH < inputTime){
             $(this).removeClass("present");
             $(this).addClass("future");

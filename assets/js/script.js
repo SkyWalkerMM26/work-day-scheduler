@@ -4,7 +4,8 @@
 // There should be time blocks from 9AM to 5PM for the user to input and save.
 // use bootstrap to assist with the input and save button. 
 // The time block should be color coded of what is considered the past, present, and future. 
-// Save the user input into the local storage: Hint hint(window.onbeforeunload = function(){localStorage.setItem.("event", $("#id").val());})
+// Save the user input into the local storage.
+// fxn render the information from the local storage to make sure the info stays as the user refreshes.
 
 $(document).ready(function (){
     var headerTime = moment().format("dddd, MMMM Do");
@@ -27,7 +28,12 @@ $(document).ready(function (){
         }
     });
 
-    
+    $(".saveBtn").click(function (event){
+        event.preventDefault();
+        var storeInput = $(this).siblings(".time-block").val();
+        var inputTime = $(this).attr("id");
+        localStorage.setItem(inputTime, storeInput);
+    });
     
 })
 

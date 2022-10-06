@@ -30,13 +30,23 @@ $(document).ready(function (){
 
     $(".saveBtn").click(function (event){
         event.preventDefault();
-        var storeInput = $(this).siblings(".time-block").val();
-        var inputTime = $(this).parent().attr("id");
-        localStorage.setItem(inputTime, storeInput);
+        var value = $(this).siblings(".time-block").val();
+        var key = $(this).parent().attr("id");
+        localStorage.setItem(key, value);
     });
 
     $("#9 .time-block").val(localStorage.getItem("9"));
+    $("#10 .time-block").val(localStorage.getItem("10"));
+    $("#11 .time-block").val(localStorage.getItem("11"));
+    $("#12 .time-block").val(localStorage.getItem("12"));
+    $("#13 .time-block").val(localStorage.getItem("13"));
+    $("#14 .time-block").val(localStorage.getItem("14"));
+    $("#15 .time-block").val(localStorage.getItem("15"));
+    $("#16 .time-block").val(localStorage.getItem("16"));
+    $("#17 .time-block").val(localStorage.getItem("17"));
+
     
-})
+
+});
 
 

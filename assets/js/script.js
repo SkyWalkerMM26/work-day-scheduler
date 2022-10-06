@@ -34,6 +34,8 @@ $(document).ready(function (){
         var inputTime = $(this).parent().attr("id");
         localStorage.setItem(inputTime, storeInput);
     });
+
+    $("#9 .time-block").val(localStorage.getItem("9"));
     
 })
 

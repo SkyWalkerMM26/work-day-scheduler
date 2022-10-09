@@ -1,5 +1,10 @@
 # Work Day Scheduler 
 
+Author: Mai Moua 
+[GitHub Profile](https://github.com/SkyWalkerMM26)
+[LinkedIn](https://www.linkedin.com/in/mai-moua-69a50517a/)
+[Website](https://skywalkermm26.github.io/work-day-scheduler/)
+
 ## HELLO THERE! 
 
 Here is a daily planner to help manage your time effectively. 🗓
@@ -22,10 +27,6 @@ Here is a daily planner to help manage your time effectively. 🗓
 * Git
 * GitHub
 
-Author: Mai Moua 
-[GitHub Profile](https://github.com/SkyWalkerMM26)
-[LinkedIn](https://www.linkedin.com/in/mai-moua-69a50517a/)
-[Portfolio Website](https://skywalkermm26.github.io/work-day-scheduler/)
 
 
 
